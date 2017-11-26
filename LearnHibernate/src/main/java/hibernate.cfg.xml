@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
  
 <hibernate-configuration>
-<session-factory>
+<session-factory>   
  
 <!-- Related to the connection START -->
 <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
@@ -15,6 +15,8 @@
  
 <!-- Related to hibernate properties START -->
 <property name="show_sql">true </property>
+ <property name="format_sql">true</property>
+<!--         <property name="use_sql_comments">true</property> -->
 <property name="dialet">org.hibernate.dialect.MySQLDialect</property>
 <property name="hbm2ddl.auto">update</property>
 <!-- Related to hibernate properties END -->
@@ -22,6 +24,10 @@
 <!-- Related to mapping START -->
 <mapping  class="day1.P1.example.SaveEmployee.Employee" /> 
 <mapping  class="day2.P1.example.FetchEmployee.FetchEmployee" /> 
+<mapping  class="day2.P2.example.UpdateEmployee.UpdateEmployee" /> 
+<mapping  class="day2.P3.example.DeleteEmployee.DeleteEmployee" /> 
+<mapping  class="day2.P4.example.HQL.FetchAllRecords.FetchEmployeeDetails" /> 
+
  
 <!-- Related to the mapping END -->
  
