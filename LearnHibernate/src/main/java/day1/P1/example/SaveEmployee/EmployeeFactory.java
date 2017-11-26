@@ -17,10 +17,14 @@ public class EmployeeFactory {
 		  
 		Transaction tx = session.beginTransaction();
 		
-		Employee employee = new Employee();
-		employee.setEmpName("Krishna");
+		Employee employee1 = new Employee();
+		employee1.setEmpName("Krishna");
 		
-		session.save(employee);
+		Employee employee2 = new Employee();
+		employee2.setEmpName("moorthy");
+		
+		session.save(employee1);
+		session.save(employee2);
 		tx.commit();
 		session.close();
 		sessionfactory.close();
