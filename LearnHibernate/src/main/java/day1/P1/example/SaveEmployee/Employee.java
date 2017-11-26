@@ -1,4 +1,4 @@
-package com.hibenate.save.Day1;
+package day1.P1.example.SaveEmployee;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

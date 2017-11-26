@@ -1,4 +1,4 @@
-package com.hibenate.save.Day1;
+package day1.P1.example.SaveEmployee;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
